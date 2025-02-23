@@ -13,6 +13,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: rgba(241, 238, 238, 0.944);
     background-color: black;
 }
 img{
@@ -20,9 +21,7 @@ img{
     height: auto;
     object-fit: cover;
 }
-.banner{
-    
-}
+
 .contentBox{
     display: flex;
     justify-content: space-between;
@@ -51,6 +50,7 @@ img{
 .artistName{
     font-size: 0.8rem;
 }
+
 .timeline{
     height: 1rem;
     width: 13rem;
