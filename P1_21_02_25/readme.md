@@ -10,6 +10,6 @@ A simple webpage displaying the lyrics and chords for *Birds of a Feather* by Bi
 - Modern **dark-themed UI** for better readability.
 
 ## 🚀 How to Use
-1. Open  https://hash-d25.github.io/IWT/  in your browser.
+1. Open  [https://hash-d25.github.io/IWT/](https://hash-d25.github.io/IWT/P1_21_02_25/)  in your browser.
 2. View lyrics and chords.
 3. Click on the **Spotify player** to listen.
