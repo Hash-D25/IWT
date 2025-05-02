@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <form action="about:blank" target="_blank" method="post">
+        <h1 style="text-align: center; color: #fff; margin-bottom: 4rem;">Student Registration Form</h1>
+
+        <div>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" maxlength="50"
+                placeholder="Max 50 Characters Allowed" />
+        </div>
+
+        <div>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" maxlength="50" placeholder="Max 50 Characters Allowed" />
+        </div>
+
+        <div>
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" />
+        </div>
+
+        <div>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" maxlength="10" placeholder="10 Digits Allowed" />
+        </div>
+
+        <div style="display: flex;">
+            <label style="margin-right: 4rem;">Gender:</label>
+            <div>
+                <input type="radio" name="gender" value="Male" id="male" />
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="Female" id="female" />
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth (DOB):</label>
+            <input type="date" id="dob" name="dob" />
+        </div>
+
+        <div style="display: flex;">
+            <label for="address" style="margin-right: 4rem;">Address:</label>
+            <div><textarea id="address" name="address" rows="10" placeholder="Enter your address" style="width: 25rem;"></textarea></div>
+        </div>
+
+        <div>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" />
+        </div>
+
+        <div>
+            <label for="pincode">Pin Code:</label>
+            <input type="text" id="pincode" name="pincode" maxlength="6" placeholder="6 Numbers Allowed" />
+        </div>
+
+        <div>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" />
+        </div>
+
+        <div>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" />
+        </div>
+
+        <div class="hobbiesdiv">
+            <label>Hobbies:</label>
+            <div>
+                <div>
+                    <input type="checkbox" name="hobbies" value="Drawing" id="drawing" />
+                    <label for="drawing">Drawing</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="hobbies" value="Singing" id="singing" />
+                    <label for="singing">Singing</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="hobbies" value="Dancing" id="dancing" />
+                    <label for="dancing">Dancing</label>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex;">
+            <label style="margin-right: 4rem;">Qualification:</label>
+            <div>
+                <div><input type="checkbox" name="qualification" value="10th" id="10th" />
+                    <label for="10th">High School (10th)</label>
+                </div>
+                <div><input type="checkbox" name="qualification" value="12th" id="12th" />
+                    <label for="12th">Higher School (12th)</label>
+                </div>
+                <div><input type="checkbox" name="qualification" value="Graduation" id="graduation" />
+                    <label for="graduation">Graduation (Bachelors)</label>
+                </div>
+                <div><input type="checkbox" name="qualification" value="Post Graduation" id="postgraduation" />
+                    <label for="postgraduation">Post Graduation (Masters)</label>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; ">
+            <label style="margin-right: 4rem;">Courses Applied For:</label>
+            <div>
+                <div>
+                    <input type="radio" name="course" value="BCA" id="bca" />
+                    <label for="bca">BCA</label>
+                </div>
+                <div>
+                    <input type="radio" name="course" value="BCom" id="bcom" />
+                    <label for="bcom">B.Com</label>
+                </div>
+                <div>
+                    <input type="radio" name="course" value="BSc" id="bsc" />
+                    <label for="bsc">B.Sc</label>
+                </div>
+                <div>
+                    <input type="radio" name="course" value="MCA" id="mca" />
+                    <label for="mca">MCA</label>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center">
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+        </div>
+    </form>
+</body>
+
+</html>

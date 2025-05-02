@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('background_flowers.webp');
+    background-repeat: y;
+}
+.page1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+#helloLine{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blueviolet;
+    border: 1px solid red;
+    width: 200px;
+    text-align: left;
+}
+.nameLine{
+    color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid black;
+    width: 15rem;
+    text-align: right;
+}
+#description{
+    color: rgb(79, 41, 114);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 3px solid pink;
+    width: 30rem;
+    text-align: center;
+}
+h1.helloLine{
+    color: aqua;
+    display: flex;
+    
+}
+.precedenceOrderStyles{
+    margin: 3rem;
+    padding: 1rem;
+    border: 3px solid gray;
+}
+.stylePrecedence{
+    margin: 3rem;
+    list-style-type: none;
+}
+.internalDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
