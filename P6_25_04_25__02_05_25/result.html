@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submitted Data</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #222; color: #fff; }
+        .container { margin: 2rem auto; max-width: 600px; background: #333; padding: 2rem; border-radius: 8px; }
+        h1 { text-align: center; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Submitted Data</h1>
+        <ul id="dataList"></ul>
+        <div style="text-align:center;">
+            <a href="index.html" style="color:#0af;">Back to form</a>
+        </div>
+    </div>
+    <script>
+        function getParams() {
+            const params = new URLSearchParams(window.location.search);
+            return Object.fromEntries(params.entries());
+        }
+
+        function displayData() {
+            const data = getParams();
+            const list = document.getElementById('dataList');
+            const fields = [
+                ['First Name', 'first_name'],
+                ['Last Name', 'last_name'],
+                ['Email', 'email'],
+                ['Mobile', 'mobile'],
+                ['Gender', 'gender'],
+                ['DOB', 'dob'],
+                ['Address', 'address'],
+                ['City', 'city'],
+                ['Pin Code', 'pincode'],
+                ['State', 'state'],
+                ['Country', 'country'],
+                ['Hobbies', 'hobbies'],
+                ['Qualification', 'qualification'],
+                ['Course', 'course']
+            ];
+            fields.forEach(([label, key]) => {
+                let value = data[key] || '';
+                // Handle multiple values (checkboxes)
+                if (Array.isArray(value)) value = value.join(', ');
+                // For checkboxes, URLSearchParams returns comma-separated string
+                if (typeof value === 'string' && value.includes(',')) value = value.split(',').join(', ');
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>${label}:</strong> ${value}`;
+                list.appendChild(li);
+            });
+        }
+        displayData();
+    </script>
+</body>
+</html>
